@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4DDBB"
+    tools:context=".speedActivity">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EFA332"
+        android:paddingVertical="50dp"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed Unit Converter"
+                android:textSize="25dp"
+
+                android:fontFamily="@font/atomic_age"
+
+
+
+                android:textColor="@color/black"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/animation_lmrgh65f"
+
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="250dp"
+                android:focusable="true"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/background"
+                android:gravity="center"
+
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:inputType="numberDecimal"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/unit"
+                android:background="@drawable/backgroundtwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kmh"/>
+        <TextView
+            android:id="@+id/kmPerHour"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 "
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/mph"/>
+        <TextView
+            android:id="@+id/meterPerHour"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 "
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/speedometer"/>
+        <TextView
+            android:id="@+id/meterPerSecond"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 "
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

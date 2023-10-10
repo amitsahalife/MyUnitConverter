@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="#C1E8E2"
+    tools:context=".temActivity">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2DB8A2"
+        android:paddingVertical="50dp"
+
+
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature\nUnit Converter"
+                android:textSize="25dp"
+android:fontFamily="@font/atomic_age"
+
+
+
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+
+
+                android:src="@drawable/temperature"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:gravity="center"
+
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:inputType="numberDecimal"
+                android:layout_marginRight="10dp"/>
+
+            <Spinner
+                android:id="@+id/unit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:background="@drawable/backgroundtwo"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp"
+    android:layout_height="wrap_content">
+    <ImageView
+
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/celcius"/>
+    <TextView
+        android:id="@+id/celcius"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 °C"
+        android:textColor="@color/black"
+        android:textSize="40dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fahrenheit"/>
+        <TextView
+            android:id="@+id/farenhite"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 °F"
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kelvin"/>
+        <TextView
+            android:id="@+id/kelvin"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 °K"
+            android:textColor="@color/black"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
